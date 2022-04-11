@@ -1,0 +1,35 @@
+@use "../index.scss" as *;
+
+.button {
+  width: 147px;
+  height: 48px;
+  border: none;
+  background: $very-dark-cyan;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background: $strong-cyan;
+    color: $very-dark-cyan;
+  }
+
+  &:focus {
+    background: $light-greyish-cyan;
+    color: $very-dark-cyan;
+  }
+}
+
+.reset__button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: $strong-cyan;
+  color: $very-dark-cyan;
+  cursor: pointer;
+  padding: 0.3rem;
+
+  &:hover {
+    background: $light-greyish-cyan;
+    color: $very-dark-cyan;
+  }
+}

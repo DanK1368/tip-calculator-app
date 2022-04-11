@@ -1,0 +1,12 @@
+@use "../index.scss" as *;
+
+.container {
+  min-width: 375px;
+  height: 80vh;
+  padding: 2rem;
+  background: $white;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
