@@ -2,11 +2,16 @@ import "./NumberOfPeople.scss";
 import InputField from "../shared/InputField";
 import personIcon from "../images/icon-person.svg";
 
-function NumberOfPeople() {
+function NumberOfPeople({ setNumOfPeople }) {
   return (
     <div className="people-wrapper">
-      <h2>Number of People</h2>
-      <InputField className="input" src={personIcon} />
+      <InputField
+        className="input"
+        src={personIcon}
+        id="people"
+        text="Number of People"
+        setState={setNumOfPeople}
+      />
     </div>
   );
 }

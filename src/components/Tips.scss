@@ -1,5 +1,9 @@
 .tip-wrapper {
   width: 100%;
+
+  @media screen and (min-width: 860px) {
+    grid-row: 2 / 3;
+  }
 }
 
 .button-container {

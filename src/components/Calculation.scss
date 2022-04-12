@@ -24,4 +24,24 @@
     font-weight: 700;
     color: $strong-cyan;
   }
+
+  @media screen and (min-width: 860px) {
+    grid-row: 1/3;
+    align-self: center;
+  }
+}
+
+.reset__button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: $strong-cyan;
+  color: $very-dark-cyan;
+  cursor: pointer;
+  padding: 0.3rem;
+
+  &:hover {
+    background: $light-greyish-cyan;
+    color: $very-dark-cyan;
+  }
 }

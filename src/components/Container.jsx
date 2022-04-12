@@ -1,6 +1,6 @@
 import "./Container.scss";
 
 function Container({ children }) {
-  return <section className="container">{children}</section>;
+  return <form className="container">{children}</form>;
 }
 export default Container;

@@ -9,9 +9,16 @@ label {
   border: none;
   width: 100%;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: right;
   cursor: pointer;
+  margin-top: 1rem;
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
 
   &:focus {
     outline: 2px solid $strong-cyan;
@@ -27,6 +34,12 @@ label {
   color: $dark-greyish-cyan;
   text-align: center;
   cursor: pointer;
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
 
   &:focus {
     outline: 2px solid $strong-cyan;
