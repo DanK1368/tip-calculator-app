@@ -2,7 +2,7 @@
 
 .container {
   min-width: 375px;
-  height: 85vh;
+  height: 100%;
   padding: 0rem 3rem;
   background: $white;
   border-radius: 15px 15px 0 0;
@@ -14,7 +14,8 @@
   @media screen and (min-width: 860px) {
     width: 920px;
     grid-template-columns: repeat(2, 1fr);
-    height: 481px;
+    height: 500px;
     width: 920px;
+    border-radius: 15px;
   }
 }
