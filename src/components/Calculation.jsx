@@ -25,9 +25,9 @@ function Calculation({
     <div className="calculation">
       <div className="calculation__summary">
         <div className="calculation__container">
-          <h3>
+          <h2>
             Tip Amount <br /> <span>/ person</span>
-          </h3>
+          </h2>
           {tipAmount === null ? (
             <p className="calculation__result">$0.00</p>
           ) : (
@@ -35,9 +35,9 @@ function Calculation({
           )}
         </div>
         <div className="calculation__container">
-          <h3>
+          <h2>
             Total <br /> <span>/ person</span>
-          </h3>
+          </h2>
           {tipAmount === null ? (
             <p className="calculation__result">$0.00</p>
           ) : (
