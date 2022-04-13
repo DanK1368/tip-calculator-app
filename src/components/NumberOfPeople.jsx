@@ -5,11 +5,11 @@ import personIcon from "../images/icon-person.svg";
 function NumberOfPeople({ setNumOfPeople }) {
   return (
     <div className="people-wrapper">
+      <label htmlFor="people">Number of People</label>
       <InputField
         className="input"
         src={personIcon}
         id="people"
-        text="Number of People"
         setState={setNumOfPeople}
       />
     </div>
