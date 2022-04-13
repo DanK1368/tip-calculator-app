@@ -10,17 +10,17 @@ function App() {
   const [bill, setBill] = useState(null);
   const [tip, setTip] = useState(null);
   const [numOfPeople, setNumOfPeople] = useState(null);
-  const [tipAmount, setTipAmount] = useState(null);
-  const [total, setTotal] = useState(null);
 
-  useEffect(() => {
-    if (bill > 0 && tip > 0 && numOfPeople > 0) {
-      setTipAmount(parseFloat((bill * (tip / 100)) / numOfPeople).toFixed(2));
-      setTotal(
-        parseFloat(((bill * tip) / 100 + bill) / numOfPeople).toFixed(2)
-      );
-    }
-  }, [bill, tip, numOfPeople, tipAmount, total]);
+  let tipPerPerson = 0;
+  let totalPerPerson = 0;
+
+  if (bill > 0 && tip >= 0 && numOfPeople > 0) {
+    tipPerPerson = parseFloat((bill * (tip / 100)) / numOfPeople).toFixed(2);
+    totalPerPerson = parseFloat(
+      ((bill * tip) / 100 + bill) / numOfPeople
+    ).toFixed(2);
+    console.log(tipPerPerson, totalPerPerson);
+  }
 
   return (
     <>
@@ -34,13 +34,11 @@ function App() {
             tip={tip}
             bill={bill}
             numOfPeople={numOfPeople}
-            tipAmount={tipAmount}
-            total={total}
             setBill={setBill}
             setTip={setTip}
             setNumOfPeople={setNumOfPeople}
-            setTipAmount={setTipAmount}
-            setTotal={setTotal}
+            tipPerPerson={tipPerPerson}
+            totalPerPerson={totalPerPerson}
           />
         </Container>
       </main>
