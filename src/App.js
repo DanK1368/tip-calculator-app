@@ -4,7 +4,7 @@ import Bill from "./components/Bill";
 import Tips from "./components/Tips";
 import NumberOfPeople from "./components/NumberOfPeople";
 import Calculation from "./components/Calculation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [bill, setBill] = useState(null);
