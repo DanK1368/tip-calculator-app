@@ -3,7 +3,6 @@ import "./Button.scss";
 function TipButton({ className, text, value, setState }) {
   const handleClick = e => {
     setState(parseInt(e.target.value));
-    console.log(setState);
   };
 
   return (
