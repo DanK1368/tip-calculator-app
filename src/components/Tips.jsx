@@ -5,10 +5,10 @@ import InputField from "../shared/InputField";
 function Tips({ setTip }) {
   return (
     <div className="tip-wrapper">
-      <legend>
-        <h2>Select Tips %</h2>
-      </legend>
       <fieldset className="button-container">
+        <legend>
+          <h2>Select Tips %</h2>
+        </legend>
         <Button className="button" text="five" value="5" setState={setTip} />
         <Button className="button" text="ten" value="10" setState={setTip} />
         <Button
@@ -19,7 +19,7 @@ function Tips({ setTip }) {
         />
         <Button
           className="button"
-          text="twenty five"
+          text="twentyfive"
           value="25"
           setState={setTip}
         />
