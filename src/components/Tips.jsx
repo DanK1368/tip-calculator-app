@@ -6,9 +6,7 @@ function Tips({ setTip }) {
   return (
     <div className="tip-wrapper">
       <fieldset className="button-container">
-        <legend>
-          <h2>Select Tips %</h2>
-        </legend>
+        <legend>Select Tips %</legend>
         <Button className="button" text="five" value="5" setState={setTip} />
         <Button className="button" text="ten" value="10" setState={setTip} />
         <Button
