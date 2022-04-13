@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <Title />
-      <main role="main">
+      <main>
         <Container children>
           <Bill setBill={setBill} />
           <Tips setTip={setTip} />
