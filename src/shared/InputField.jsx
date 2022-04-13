@@ -1,13 +1,12 @@
 import "./InputField.scss";
 
-function InputField({ className, placeholder, src, id, text, setState }) {
+function InputField({ className, placeholder, src, id, setState }) {
   const handleChange = e => {
     setState(parseFloat(e.target.value));
   };
 
   return (
     <>
-      <label htmlFor={id}>{text}</label>
       <input
         className={className}
         type="number"
