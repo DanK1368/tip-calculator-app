@@ -12,7 +12,7 @@ function InputField({ className, placeholder, src, id, setState }) {
         type="number"
         placeholder={placeholder}
         id={id}
-        inputMode="numeric"
+        inputMode="decimal"
         onChange={handleChange}
       />
       <img className="icon" src={src} alt="" />
