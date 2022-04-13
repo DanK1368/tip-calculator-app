@@ -1,24 +1,5 @@
 @use "../index.scss" as *;
 
-.button {
-  width: 147px;
-  height: 48px;
-  border: none;
-  background: $very-dark-cyan;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background: $strong-cyan;
-    color: $very-dark-cyan;
-  }
-
-  &:focus {
-    background: $light-greyish-cyan;
-    color: $very-dark-cyan;
-  }
-}
-
 .reset__button {
   width: 100%;
   border: none;
@@ -30,6 +11,33 @@
 
   &:hover {
     background: $light-greyish-cyan;
+    color: $very-dark-cyan;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+
+  &:checked + label {
+    background-color: $light-greyish-cyan;
+    color: $very-dark-cyan;
+  }
+}
+
+input[type="radio"] + label {
+  display: block;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+  background: $very-dark-cyan;
+  color: $white;
+
+  &:hover {
+    background: $strong-cyan;
     color: $very-dark-cyan;
   }
 }
