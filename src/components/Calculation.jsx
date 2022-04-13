@@ -1,26 +1,18 @@
 import "./Calculation.scss";
 
 function Calculation({
-  tip,
-  bill,
-  numOfPeople,
-  tipAmount,
-  total,
   setTip,
   setBill,
   setNumOfPeople,
-  setTipAmount,
-  setTotal,
+  tipPerPerson,
+  totalPerPerson,
 }) {
   const handleReset = e => {
     setTip(0);
     setBill(0);
     setNumOfPeople(0);
-    setTipAmount(0);
-    setTotal(0);
   };
 
-  console.log(tip, bill, numOfPeople);
   return (
     <div className="calculation">
       <div className="calculation__summary">
@@ -28,20 +20,20 @@ function Calculation({
           <h2>
             Tip Amount <br /> <span>/ person</span>
           </h2>
-          {tipAmount === null ? (
+          {tipPerPerson === 0 ? (
             <p className="calculation__result">$0.00</p>
           ) : (
-            <p className="calculation__result">${tipAmount}</p>
+            <p className="calculation__result">${tipPerPerson}</p>
           )}
         </div>
         <div className="calculation__container">
           <h2>
             Total <br /> <span>/ person</span>
           </h2>
-          {tipAmount === null ? (
+          {totalPerPerson === 0 ? (
             <p className="calculation__result">$0.00</p>
           ) : (
-            <p className="calculation__result">${total}</p>
+            <p className="calculation__result">${totalPerPerson}</p>
           )}
         </div>
       </div>
