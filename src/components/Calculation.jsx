@@ -1,5 +1,4 @@
 import "./Calculation.scss";
-import Button from "../shared/Button";
 
 function Calculation({
   tip,
