@@ -2,15 +2,22 @@ import "./Button.scss";
 
 function TipButton({ className, text, value, setState }) {
   const handleClick = e => {
-    e.preventDefault();
     setState(parseInt(e.target.value));
     console.log(setState);
   };
 
   return (
-    <button required className={className} value={value} onClick={handleClick}>
-      {text}
-    </button>
+    <>
+      <input
+        className={className}
+        type="radio"
+        name="tip-percentage"
+        id={text}
+        value={value}
+        onClick={handleClick}
+      />
+      <label htmlFor={text}>{value}%</label>
+    </>
   );
 }
 export default TipButton;
