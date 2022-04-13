@@ -25,23 +25,25 @@ function App() {
   return (
     <>
       <Title />
-      <Container children>
-        <Bill setBill={setBill} />
-        <Tips setTip={setTip} />
-        <NumberOfPeople setNumOfPeople={setNumOfPeople} />
-        <Calculation
-          tip={tip}
-          bill={bill}
-          numOfPeople={numOfPeople}
-          tipAmount={tipAmount}
-          total={total}
-          setBill={setBill}
-          setTip={setTip}
-          setNumOfPeople={setNumOfPeople}
-          setTipAmount={setTipAmount}
-          setTotal={setTotal}
-        />
-      </Container>
+      <main>
+        <Container children>
+          <Bill setBill={setBill} />
+          <Tips setTip={setTip} />
+          <NumberOfPeople setNumOfPeople={setNumOfPeople} />
+          <Calculation
+            tip={tip}
+            bill={bill}
+            numOfPeople={numOfPeople}
+            tipAmount={tipAmount}
+            total={total}
+            setBill={setBill}
+            setTip={setTip}
+            setNumOfPeople={setNumOfPeople}
+            setTipAmount={setTipAmount}
+            setTotal={setTotal}
+          />
+        </Container>
+      </main>
     </>
   );
 }
