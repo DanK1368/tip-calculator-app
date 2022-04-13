@@ -24,12 +24,14 @@ function Tips({ setTip }) {
           setState={setTip}
         />
         <Button className="button" text="fifty" value="50" setState={setTip} />
-        <InputField
-          className="custom__tip"
-          placeholder="Custom"
-          id="custom"
-          setState={setTip}
-        />
+        <label htmlFor="custom">
+          <InputField
+            className="custom__tip"
+            placeholder="Custom"
+            id="custom"
+            setState={setTip}
+          />
+        </label>
       </fieldset>
     </div>
   );
